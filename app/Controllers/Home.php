@@ -9,4 +9,13 @@ class Home extends BaseController
 
 	//--------------------------------------------------------------------
 
+	public function show()
+	{
+		$data['title'] = 'Arfina Shella Meilany';
+		$data['npm'] = '1817051005';
+		echo view('mahasiswa/header' , $data);
+		echo view('mahasiswa/index', $data);
+		echo view('mahasiswa/footer' , $data);
+	}
+
 }
